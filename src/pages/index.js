@@ -6,9 +6,10 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
-// import Row from 'react-bootstrap/Row'
-// import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
+ 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -33,7 +34,7 @@ function HomePageBlock({title,img,description,href}){
   <Col className={styles.mainCardColumn}>
     <h1 style={{"fontSize":24}}> <Link to={href}>{title}</Link></h1>
     {img && 
-      <div style={{paddingLeft:40, paddingRight:40, paddingTop:20, paddingBottom:20}}>
+      <div style={{paddingLeft:40, paddingRight:40, paddingTop:10, paddingBottom:10}}>
         <img src={useBaseUrl(img)}/>
       </div>
     }
@@ -80,9 +81,22 @@ export default function Home() {
         </header>
         <main style={{ marginTop:"-40px" }}>
         <div className={clsx("container", styles.card)}>
-          
+        <Row>
+            <HomePageBlock title="Blog" href="/blog" img="img/icons/Search engine _Monochromatic.svg" description="Browse our latest tech articles!"/>
+            <HomePageBlock title="A" href="/blog" img="img/icons/Search engine _Monochromatic.svg" description="Browse our latest tech articles!"/>
+            <HomePageBlock title="B" href="/blog" img="img/icons/Search engine _Monochromatic.svg" description="Browse our latest tech articles!"/>
+            <HomePageBlock title="C" href="/blog" img="img/icons/Search engine _Monochromatic.svg" description="Browse our latest tech articles!"/>
+            {/* <HomePageBlock title="D" href="/blog" img="img/icons/Search engine _Monochromatic.svg" description="Browse our latest tech articles!"/> */}
 
+        </Row>
         </div>
+
+        <div className={clsx("container", styles.card)}>
+          <Row>
+            <HomePageBlock title="Our latest blog posts" href="" description="Test"/>
+          </Row>
+        </div>
+
 
       </main>
     </Layout>
