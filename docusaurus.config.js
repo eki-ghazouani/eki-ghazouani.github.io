@@ -12,8 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-
+  favicon: 'img/favicon.png',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'eki-ghazouani', // Usually your GitHub org/user name.
@@ -32,19 +31,24 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        googleAnalytics: {
+          trackingID: 'UA-124520099-9',
+          // Optional fields.
+          anonymizeIP: true, // Should IPs be anonymized?
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          postsPerPage: 9,
+          blogSidebarCount: 0,
+
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -56,75 +60,82 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image:"/img/homepage_banner.jpg",
       navbar: {
-        title: 'My Site',
+        title: 'Eki.Lab',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/favicon.png',
         },
+      
         items: [
+
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+
+          
+          {to: 'https://ekimetrics.com/fr/', label: 'Ekimetrics website', position: 'right'},
+          {href: 'mailto:inno@ekimetrics.com', label: 'Contact us!', position: 'right'},
         ],
+      },
+      colorMode:{
+        defaultMode:"dark",
+        disableSwitch:true,
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'About us',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Who we are ?',
+                to: 'https://ekimetrics.com/who-we-are/',
+              },
+              {
+                label: 'Our team',
+                to: 'https://ekimetrics.com/our-team/',
+              },
+              {
+                label: 'Subscribe to our newsletter',
+                to: 'https://ekimetrics.us13.list-manage.com/subscribe?u=85b8ce42caa0a733e98233bc4&id=6355d0a6f9',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Find us',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Github',
+                href: 'https://github.com/ekimetrics',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Careers',
+                href: 'https://ekimetrics.com/careers/',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Eki on Welcome to the jungle',
+                href: 'https://www.welcometothejungle.com/fr/companies/ekimetrics',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Contact',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Get in touch with our teams',
+                href: 'mailto:inno@ekimetrics.com',
               },
             ],
           },
+          
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        
       },
     }),
 };
