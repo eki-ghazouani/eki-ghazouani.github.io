@@ -6,6 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  
   title: 'Eki.Lab',
   tagline: 'EkiLab - the Ekimetrics technology & innovation website. Behind the scenes of the Data Science Company',
   url: 'https://eki-ghazouani.github.io/',
@@ -17,10 +18,15 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'eki-ghazouani', // Usually your GitHub org/user name.
   projectName: 'ekimetrics.github.io', // Usually your repo name.
-
+ 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
+  
+  // plugins: [[require.resolve('docusaurus-lunr-search')], [require.resolve("docusaurus-plugin-image-zoom")]],
+  plugins: [require.resolve("docusaurus-lunr-search"),'plugin-image-zoom'],
+
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
