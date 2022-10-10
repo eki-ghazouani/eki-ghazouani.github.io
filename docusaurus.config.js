@@ -24,7 +24,25 @@ const config = {
   // to replace "en" with "zh-Hans".
   
   // plugins: [[require.resolve('docusaurus-lunr-search')], [require.resolve("docusaurus-plugin-image-zoom")]],
-  plugins: [require.resolve("docusaurus-lunr-search"),'plugin-image-zoom'],
+  plugins: [
+      require.resolve("docusaurus-lunr-search"),
+      'plugin-image-zoom',
+
+      [
+        'content-docs',
+        /** @type {import('@docusaurus/plugin-content-docs').Options} */
+        ({
+          id: 'about',
+          path: 'about',
+          routeBasePath: 'about',
+            editCurrentVersion: true,
+          sidebarPath: require.resolve('./sidebars_about.js'),
+          // showLastUpdateAuthor: true,
+          // showLastUpdateTime: true,
+        }),
+      ],
+  
+  ],
 
 
   i18n: {
@@ -71,6 +89,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
+        hideOnScroll: true,
         title: 'Eki.Lab',
         logo: {
           alt: 'My Site Logo',
@@ -84,11 +103,67 @@ const config = {
 
           {
             type: 'doc',
-            docId: 'solutions',
-            to: '/solutions',
+            docId: '/category/solutions',
+            to: '/solutions/introduction',
             position: 'left',
             label: 'Solutions',
           },
+
+          // {
+          //   to: '/about',
+          //   label: 'About',
+          //   position: 'left',
+          //   // activeBaseRegex: `/about/`,
+          // },
+
+
+          {
+            type: 'dropdown',
+            label: 'Ressources',
+            position: 'left',
+            items:[
+              {
+                label: "Open Source",
+                href:'/opensource'
+              },
+
+              {
+                label: "Hackatons",
+                href:'/hacks'
+              },
+
+              {
+                label: "Trainings",
+                href:'/trainings'
+              }
+
+            ],
+          },
+
+          {
+            type: 'dropdown',
+            label: 'About us',
+            position: 'left',
+            items:[
+              {
+                label: "Ekilab",
+                href:'/about/ekilab'
+              },
+
+              {
+                label: "Ekimetrics",
+                href:'/about/ekimetrics'
+              },
+
+              {
+                label: "Technology stack",
+                href:'/about/stack'
+              }
+
+            ],
+          },
+
+
 
           
           {to: 'https://ekimetrics.com/fr/', label: 'Ekimetrics website', position: 'right'},
