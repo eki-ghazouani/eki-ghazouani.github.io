@@ -20,7 +20,9 @@ keywords:
 
 <!--truncate-->
 
-
+<div align="justify"> 
+Hi everyone, we are now in September and we release our 6th Newsletter! Ranging from podcasts to tutorials, this Newsletter is made for practicioners!
+ </div>
 
 
 

@@ -42,12 +42,16 @@ const config = {
           // Optional fields.
           anonymizeIP: true, // Should IPs be anonymized?
         },
+        
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          path: "solutions",
+          routeBasePath: '/',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-
         },
+
+
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -66,7 +70,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image:"/img/homepage_banner.jpg",
       navbar: {
         title: 'Eki.Lab',
         logo: {
@@ -77,11 +80,14 @@ const config = {
         items: [
 
           {to: '/blog', label: 'Blog', position: 'left'},
+
+
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'solutions',
+            to: '/solutions',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Solutions',
           },
 
           
@@ -147,3 +153,5 @@ const config = {
 };
 
 module.exports = config;
+
+

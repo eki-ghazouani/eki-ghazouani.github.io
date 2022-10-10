@@ -19,5 +19,12 @@ slorber:
 
 ali.ghazouani:
   name: Ali Ghazouani
-  title: Data Scientist Consultant
+  title: Junior Data Scientist Consultant
   image_url: https://github.com/eki-ghazouani.png
+  url: mailto:inno@ekimetrics.com
+
+nathan.rouff:
+  name: Nathan Rouff
+  title : Data Scientist Consultant
+  image_url: /img/authors/nathan_rouff.png
+  url: mailto:inno@ekimetrics.com

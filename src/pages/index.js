@@ -83,7 +83,7 @@ export default function Home() {
         <div className={clsx("container", styles.card)}>
         <Row>
             <HomePageBlock title="Blog" href="/blog" img="img/icons/Search engine _Monochromatic.svg" description="Browse our latest tech articles!"/>
-            <HomePageBlock title="A" href="/blog" img="img/icons/Search engine _Monochromatic.svg" description="Browse our latest tech articles!"/>
+            <HomePageBlock title="Solutions" href="/docs/solutions" img="img/icons/Innovation _Monochromatic.svg" description="Explore our solutions"/>
             <HomePageBlock title="B" href="/blog" img="img/icons/Search engine _Monochromatic.svg" description="Browse our latest tech articles!"/>
             <HomePageBlock title="C" href="/blog" img="img/icons/Search engine _Monochromatic.svg" description="Browse our latest tech articles!"/>
             {/* <HomePageBlock title="D" href="/blog" img="img/icons/Search engine _Monochromatic.svg" description="Browse our latest tech articles!"/> */}
