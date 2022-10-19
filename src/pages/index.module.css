@@ -23,11 +23,17 @@
 }
 
 
-/* .card {
+.card {
   margin-bottom: 40px;
   padding: 40px;
   text-align: center;
 }
+
+.mainCardColumn {
+  padding-left: 20px;
+   padding-right: 20px;
+}
+
 
 header > .card {
   background-color: rgba(22, 41, 60, .7);
@@ -36,73 +42,15 @@ header > .card {
 main > .card {
   z-index: 10;
   background-color: #32475a;
-} */
+}
 
 .mainCardColumn {
   padding-left: 20px;
    padding-right: 20px;
 }
-/* 
-.mainCardColumn {
-  padding-left: 20px;
-   padding-right: 20px;
-} */
 
 @media screen and (max-width: 966px) {
   .mainCardColumn:not(:last-child) {
     margin-bottom: 40px;
   }
-}
-
-
-
-.acard {
-  /* margin-bottom: 0px; */
-  /* padding-top: 20px;
-  padding-bottom: 20px; */
-  text-align: center;
-  /* background-color: #380320; */
-}
-
-header > .acard {
-  background-color: rgba(250, 1, 97, 0.7);
-}
-
-main > .acard {
-  z-index: 10;
-  background-color: #380320;
-}
-
-.mr {
-  margin-right: 20px;
-}
-
-.card {
-  margin-bottom: 40px;
-  padding: 40px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-header > .card {
-  background-color: rgba(22, 41, 60, .7);
-}
-
-main > .card {
-  z-index: 10;
-  background-color: #32475a;
-}
-
-.background_dark_blue {
-  background-color: rgba(22, 41, 60, .7);
-}
-
-
-.bcard {
-  /* margin-bottom: 0px; */
-  /* padding-top: 20px;
-  padding-bottom: 20px; */
-  text-align: center;
-  background-color: rgba(22, 41, 60, .7);
-  border-radius: 10px;
 }
