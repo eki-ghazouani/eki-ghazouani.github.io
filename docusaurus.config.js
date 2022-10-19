@@ -9,15 +9,15 @@ const config = {
   
   title: 'Eki.Lab',
   tagline: 'EkiLab - the Ekimetrics technology & innovation website. Behind the scenes of the Data Science Company',
-  url: 'https://eki-ghazouani.github.io/', 
-  baseUrl: '/eki-ghazouani.github.io/',
+  url: 'https://eki-ghazouani.github.io/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'eki-ghazouani', // Usually your GitHub org/user name.
-  projectName: 'eki-ghazouani.github.io', // Usually your repo name.
+  projectName: 'ekimetrics.github.io', // Usually your repo name.
  
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
