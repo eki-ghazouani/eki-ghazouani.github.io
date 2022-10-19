@@ -165,7 +165,7 @@ const config = {
 
 
 
-          
+          {to: 'https://ekimetrics.com/fr/carrieres/', label: 'Careers', position: 'left'},          
           {to: 'https://ekimetrics.com/fr/', label: 'Ekimetrics website', position: 'right'},
           {href: 'mailto:inno@ekimetrics.com', label: 'Contact us!', position: 'right'},
         ],
