@@ -3,8 +3,6 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const math = require('remark-math');
-const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -28,8 +26,7 @@ const config = {
   // plugins: [[require.resolve('docusaurus-lunr-search')], [require.resolve("docusaurus-plugin-image-zoom")]],
   plugins: [
       require.resolve("docusaurus-lunr-search"),
-      require.resolve("docusaurus-plugin-image-zoom"),
-      // 'plugin-image-zoom',
+      'plugin-image-zoom',
 
       [
         'content-docs',
@@ -79,8 +76,6 @@ const config = {
           // Remove this to remove the "edit this page" links.
           postsPerPage: 9,
           blogSidebarCount: 0,
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
 
         },
         theme: {
@@ -90,36 +85,9 @@ const config = {
     ],
   ],
 
-  stylesheets: [
-    {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
-      integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
-    },
-  ],
-
-  
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-
-      zoom: {
-        selector: '.markdown :not(em) > img',
-        config: {
-          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
-          background: {
-            light: 'rgba(22,41,60,1)',
-            dark: 'rgba(22,41,60,1)'
-          }
-        }
-      },
-      
-
-
-
       navbar: {
         hideOnScroll: true,
         title: 'Eki.Lab',

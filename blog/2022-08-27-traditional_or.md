@@ -29,22 +29,6 @@ keywords:
 <!--truncate-->
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-
-
-
-
-
-Let $f\colon[a,b]\to\R$ be Riemann integrable. Let $F\colon[a,b]\to\R$ be
-$F(x)=\int_{a}^{x} f(t)\,dt$. Then $F$ is continuous, and at all $x$ such that
-$f$ is continuous at $x$, $F$ is differentiable at $x$ with $F'(x)=f(x)$.
-
-$$
-I = \int_0^{2\pi} \sin(x)\,dx
-$$
-
 In this first article is introduced a systematic way to approach and solve optimization problems. Then, the multi-knapsack problem itself is introduced. Then we apply the rules defined before on how to solve optimization problems and obtain the optimal solution to the multi-knapsack problem, formulated as a Mixed Integer problem and using Python-MIP package. Let's now introduce simple steps one can follow to approach optimization problems with optimization solvers.
 
 
