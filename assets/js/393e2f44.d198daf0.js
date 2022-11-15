@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeki_ghazouani_github_io=self.webpackChunkeki_ghazouani_github_io||[]).push([[7856],{7328:o=>{o.exports=JSON.parse('{"permalink":"/blog/tags/optimization","page":1,"postsPerPage":9,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

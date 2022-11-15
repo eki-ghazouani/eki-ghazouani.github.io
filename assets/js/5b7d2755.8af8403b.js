@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeki_ghazouani_github_io=self.webpackChunkeki_ghazouani_github_io||[]).push([[6295],{2654:e=>{e.exports=JSON.parse('{"title":"Careers","description":"At Ekimetrics, we have several career paths. ","slug":"/category/careers","permalink":"/category/careers","navigation":{"next":{"title":"Classic path","permalink":"/Introduction/Classic"}}}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeki_ghazouani_github_io=self.webpackChunkeki_ghazouani_github_io||[]).push([[2923],{9746:a=>{a.exports=JSON.parse('{"label":"Solvers","permalink":"/blog/tags/solvers","allTagsPath":"/blog/tags","count":1}')}}]);

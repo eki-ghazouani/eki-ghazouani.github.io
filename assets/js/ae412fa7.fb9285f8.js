@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeki_ghazouani_github_io=self.webpackChunkeki_ghazouani_github_io||[]).push([[804],{7140:a=>{a.exports=JSON.parse('{"label":"Operational Research","permalink":"/blog/tags/operational-research","allTagsPath":"/blog/tags","count":2}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeki_ghazouani_github_io=self.webpackChunkeki_ghazouani_github_io||[]).push([[3691],{7498:a=>{a.exports=JSON.parse('{"label":"Data Engineering","permalink":"/blog/tags/data-engineering","allTagsPath":"/blog/tags","count":1}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeki_ghazouani_github_io=self.webpackChunkeki_ghazouani_github_io||[]).push([[3811],{4198:a=>{a.exports=JSON.parse('{"label":"NPM","permalink":"/blog/tags/npm","allTagsPath":"/blog/tags","count":1}')}}]);

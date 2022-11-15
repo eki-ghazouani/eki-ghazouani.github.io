@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeki_ghazouani_github_io=self.webpackChunkeki_ghazouani_github_io||[]).push([[7097],{252:a=>{a.exports=JSON.parse('{"label":"Data Mesh","permalink":"/blog/tags/data-mesh","allTagsPath":"/blog/tags","count":1}')}}]);
