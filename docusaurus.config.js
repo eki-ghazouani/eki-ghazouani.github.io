@@ -19,7 +19,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'eki-ghazouani', // Usually your GitHub org/user name.
-  projectName: 'ekimetrics.github.io', // Usually your repo name.
+  projectName: 'eki-ghazouani.github.io', // Usually your repo name.
  
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -66,7 +66,7 @@ const config = {
         
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          path: "solutions",
+          path: "careers",
           routeBasePath: '/',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -133,13 +133,6 @@ const config = {
           {to: '/blog', label: 'Blog', position: 'left'},
 
 
-          {
-            type: 'doc',
-            docId: '/category/solutions',
-            to: '/solutions/introduction',
-            position: 'left',
-            label: 'Solutions',
-          },
 
           // {
           //   to: '/about',
@@ -154,10 +147,10 @@ const config = {
             label: 'Ressources',
             position: 'left',
             items:[
-              {
-                label: "Open Source",
-                href:'/opensource'
-              },
+              // {
+              //   label: "Open Source",
+              //   href:'/opensource'
+              // },
 
               {
                 label: "Hackatons",
@@ -190,14 +183,31 @@ const config = {
               {
                 label: "Technology stack",
                 href:'/about/stack'
-              }
+              },
+              
+              // {
+              //   label: "Solutions",
+              //   href:'/about/solutions'
+              // }
 
             ],
           },
 
 
 
-          {to: 'https://ekimetrics.com/fr/carrieres/', label: 'Careers', position: 'left'},          
+
+          {
+            type: 'doc',
+            docId: '/category/careers',
+            to: '/careers/introduction',
+            position: 'left',
+            label: 'Careers',
+          },
+
+
+
+
+          // {to: 'https://ekimetrics.com/fr/carrieres/', label: 'Careers', position: 'left'},          
           {to: 'https://ekimetrics.com/fr/', label: 'Ekimetrics website', position: 'right'},
           {href: 'mailto:inno@ekimetrics.com', label: 'Contact us!', position: 'right'},
         ],

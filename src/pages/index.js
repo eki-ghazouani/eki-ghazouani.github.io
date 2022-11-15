@@ -11,7 +11,7 @@ import Col from 'react-bootstrap/Col'
 import Head from '@docusaurus/Head';
 import recentPosts from "../../latest_blog.json";
 // import bootstrap from 'react-bootstrap'
-import chosenposts from "../../our_choice.json"
+import chosenposts from "../../latest_blog.json"
 
 
  
@@ -89,10 +89,10 @@ export default function Home() {
         <div className={clsx("container", styles.card)}>
         <Row>
             <HomePageBlock title="Blog" href="/blog" img="img/icons/Search engine _Monochromatic.svg" description="Browse our latest tech articles!"/>
-            <HomePageBlock title="Solutions" href="/category/solutions" img="img/icons/Innovation _Monochromatic.svg" description="Explore our solutions"/>
-            <HomePageBlock title="Ressources" href="/blog" img="img/icons/World wide web_Monochromatic.svg" description="Browse our ressources"/>
-            <HomePageBlock title="About Us" href="/blog" img="img/icons/Spotlight _Monochromatic.svg" description="Learn more about us"/>
-            <HomePageBlock title="Careers" href="https://ekimetrics.com/fr/carrieres/" img="img/icons/Achievement _Monochromatic.svg" description="Learn more about our career paths"/>
+            {/* <HomePageBlock title="Solutions" href="/category/solutions" img="img/icons/Innovation _Monochromatic.svg" description="Explore our solutions"/> */}
+            <HomePageBlock title="Ressources" href="/hacks" img="img/icons/World wide web_Monochromatic.svg" description="Browse our ressources"/>
+            <HomePageBlock title="About Us" href="/about/ekilab" img="img/icons/Spotlight _Monochromatic.svg" description="Learn more about us"/>
+            <HomePageBlock title="Careers" href="/category/careers" img="img/icons/Achievement _Monochromatic.svg" description="Learn more about our career paths"/>
 
         </Row>
         </div>
@@ -100,7 +100,7 @@ export default function Home() {
         
      
      
-        <div className={clsx("container", styles.card)}>
+        {/* <div className={clsx("container", styles.card)}>
         <h1 style={{"fontSize":24}}> <span className="gold">Our choice </span></h1>
 
         <Row>
@@ -225,7 +225,7 @@ export default function Home() {
         </Row>
 
         </div>
-
+ */}
 
 
 
@@ -283,7 +283,7 @@ export default function Home() {
         
         
         
-        <div className={clsx("container", styles.card)}>
+        {/* <div className={clsx("container", styles.card)}>
           <Row>
             <HomePageBlock title="Our latest blog posts" href="" description={
               <>
@@ -297,7 +297,7 @@ export default function Home() {
               </>
             }/>
           </Row>
-        </div>
+        </div> */}
 
 
 
