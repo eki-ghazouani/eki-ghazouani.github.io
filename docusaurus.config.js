@@ -142,28 +142,28 @@ const config = {
           // },
 
 
-          {
-            type: 'dropdown',
-            label: 'Ressources',
-            position: 'left',
-            items:[
-              // {
-              //   label: "Open Source",
-              //   href:'/opensource'
-              // },
+          // {
+          //   type: 'dropdown',
+          //   label: 'Ressources',
+          //   position: 'left',
+          //   items:[
+          //     // {
+          //     //   label: "Open Source",
+          //     //   href:'/opensource'
+          //     // },
 
-              {
-                label: "Hackatons",
-                href:'/hacks'
-              },
+          //     {
+          //       label: "Hackatons",
+          //       href:'/hacks'
+          //     },
 
-              {
-                label: "Trainings",
-                href:'/trainings'
-              }
+          //     {
+          //       label: "Trainings",
+          //       href:'/trainings'
+          //     }
 
-            ],
-          },
+          //   ],
+          // },
 
           {
             type: 'dropdown',
@@ -183,6 +183,18 @@ const config = {
               {
                 label: "Technology stack",
                 href:'/about/stack'
+              },
+
+
+              {
+                label: "Hackatons",
+                href:'/about/hackatons'
+              },
+
+
+              {
+                label: "Trainings",
+                href:'/about/trainings'
               },
               
               // {

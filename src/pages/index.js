@@ -90,7 +90,7 @@ export default function Home() {
         <Row>
             <HomePageBlock title="Blog" href="/blog" img="img/icons/Search engine _Monochromatic.svg" description="Browse our latest tech articles!"/>
             {/* <HomePageBlock title="Solutions" href="/category/solutions" img="img/icons/Innovation _Monochromatic.svg" description="Explore our solutions"/> */}
-            <HomePageBlock title="Ressources" href="/hacks" img="img/icons/World wide web_Monochromatic.svg" description="Browse our ressources"/>
+            {/* <HomePageBlock title="Ressources" href="/hacks" img="img/icons/World wide web_Monochromatic.svg" description="Browse our ressources"/> */}
             <HomePageBlock title="About Us" href="/about/ekilab" img="img/icons/Spotlight _Monochromatic.svg" description="Learn more about us"/>
             <HomePageBlock title="Careers" href="/category/careers" img="img/icons/Achievement _Monochromatic.svg" description="Learn more about our career paths"/>
 
