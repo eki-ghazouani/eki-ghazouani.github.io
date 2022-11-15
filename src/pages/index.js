@@ -97,143 +97,19 @@ export default function Home() {
         </Row>
         </div>
 
-        
-     
-     
-        {/* <div className={clsx("container", styles.card)}>
-        <h1 style={{"fontSize":24}}> <span className="gold">Our choice </span></h1>
-
-        <Row>
-
-          <Col className={`${styles.acard}`}>
-          <div className= {`${styles.bcard} `} >
-            <div className="card__image">
-              <img
-                // src={headerImageURL}
-                src="https://images.unsplash.com/photo-1506624183912-c602f4a21ca7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-                alt="Image alt text"
-                title="Logo Title Text 1"
-              />
-            </div>
-
-          <div className="card__body">
-
-            <article>
-            <h2
-                style={{"fontFamily":"InterCustom","fontSize":16}}
-                className={clsx('margin-bottom--sm', styles.blogPostTitle)}>
-                {<Link to={"/blog"}>{"TEST"}</Link>}
-              </h2>
-            <p style={{"fontFamily":"InterCustom",fontSize:14,lineHeight:1.2}}>This article is part of a series of articles which will introduce several optimization techniques, from traditional (yet advanced) Mathematical Optimization solvers and associated packages to Deep Reinforcement Learning algorithms, while tackling a very famous Operations Research problem: the multi-knapsack problem. Here, the focus is on an approach based on two famous reinforcement learning algorithms: Q-Learning and Policy Gradient.</p>
-
-            </article>
-            </div>
-          </div>
-
-          </Col>
-
-
-          <Col className={`${styles.acard}`}>
-            
-          <div className= {`${styles.bcard} `} >
-            <div className="card__image">
-              <img
-                // src={headerImageURL}
-                src="https://images.unsplash.com/photo-1506624183912-c602f4a21ca7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-                alt="Image alt text"
-                title="Logo Title Text 1"
-              />
-            </div>
-
-          <div className="card__body">
-
-            <article>
-            <h2
-                style={{"fontFamily":"InterCustom","fontSize":16}}
-                className={clsx('margin-bottom--sm', styles.blogPostTitle)}>
-                {<Link to={"/blog"}>{"TEST"}</Link>}
-              </h2>
-            <p style={{"fontFamily":"InterCustom",fontSize:14,lineHeight:1.2}}>This article is part of a series of articles which will introduce several optimization techniques, from traditional (yet advanced) Mathematical Optimization solvers and associated packages to Deep Reinforcement Learning algorithms, while tackling a very famous Operations Research problem: the multi-knapsack problem. Here, the focus is on an approach based on two famous reinforcement learning algorithms: Q-Learning and Policy Gradient.</p>
-
-            </article>
-            </div>
-          </div>
-
-          </Col>
-
-
-
-          <Col className={`${styles.acard}`}>
-          <div className= {`${styles.bcard} `} >
-            <div className="card__image">
-              <img
-                // src={headerImageURL}
-                src="https://images.unsplash.com/photo-1506624183912-c602f4a21ca7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-                alt="Image alt text"
-                title="Logo Title Text 1"
-              />
-            </div>
-
-          <div className="card__body">
-
-            <article>
-            <h2
-                style={{"fontFamily":"InterCustom","fontSize":16}}
-                className={clsx('margin-bottom--sm', styles.blogPostTitle)}>
-                {<Link to={"/blog"}>{"TEST"}</Link>}
-              </h2>
-            <p style={{"fontFamily":"InterCustom",fontSize:14,lineHeight:1.2}}>This article is part of a series of articles which will introduce several optimization techniques, from traditional (yet advanced) Mathematical Optimization solvers and associated packages to Deep Reinforcement Learning algorithms, while tackling a very famous Operations Research problem: the multi-knapsack problem. Here, the focus is on an approach based on two famous reinforcement learning algorithms: Q-Learning and Policy Gradient.</p>
-
-            </article>
-            </div>
-          </div>
-
-          </Col>
-
-
-
-
-          <Col className={`${styles.acard}`}>
-          <div className= {`${styles.bcard} `} >
-            <div className="card__image">
-              <img
-                // src={headerImageURL}
-                src="https://images.unsplash.com/photo-1506624183912-c602f4a21ca7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-                alt="Image alt text"
-                title="Logo Title Text 1"
-              />
-            </div>
-
-          <div className="card__body">
-
-            <article>
-            <h2
-                style={{"fontFamily":"InterCustom","fontSize":16}}
-                className={clsx('margin-bottom--sm', styles.blogPostTitle)}>
-                {<Link to={"/blog"}>{"TEST"}</Link>}
-              </h2>
-            <p style={{"fontFamily":"InterCustom",fontSize:14,lineHeight:1.2}}>This article is part of a series of articles which will introduce several optimization techniques, from traditional (yet advanced) Mathematical Optimization solvers and associated packages to Deep Reinforcement Learning algorithms, while tackling a very famous Operations Research problem: the multi-knapsack problem. Here, the focus is on an approach based on two famous reinforcement learning algorithms: Q-Learning and Policy Gradient.</p>
-
-            </article>
-            </div>
-          </div>
-
-          </Col>
-
-
-
-        </Row>
-
+        <div className={clsx("container", styles.card)}>
+        <h1 style={{"fontSize":24}}> <span className="gold">Our Tech Radar </span></h1> 
+        <Link to={"https://ekimetrics.github.io/tech-radar/"}>{"View in fullscreen"}</Link> 
+                  
+          <iframe id="inlineFrameExample"
+              title="Inline Frame Example"
+              width="100%"
+              height="500"
+              src="https://ekimetrics.github.io/tech-radar/">
+          </iframe>
         </div>
- */}
 
 
-
-        
-        
-        
-        
-        
         
         <div className={clsx("container", styles.card)}>
         <h1 style={{"fontSize":24}}> <span className="gold">Our Latest blog posts</span></h1>
