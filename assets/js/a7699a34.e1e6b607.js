@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeki_ghazouani_github_io=self.webpackChunkeki_ghazouani_github_io||[]).push([[5912],{7656:a=>{a.exports=JSON.parse('{"label":"BERT","permalink":"/blog/tags/bert","allTagsPath":"/blog/tags","count":2}')}}]);
