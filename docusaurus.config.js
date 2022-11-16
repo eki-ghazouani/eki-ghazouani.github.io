@@ -134,36 +134,6 @@ const config = {
 
 
 
-          // {
-          //   to: '/about',
-          //   label: 'About',
-          //   position: 'left',
-          //   // activeBaseRegex: `/about/`,
-          // },
-
-
-          // {
-          //   type: 'dropdown',
-          //   label: 'Ressources',
-          //   position: 'left',
-          //   items:[
-          //     // {
-          //     //   label: "Open Source",
-          //     //   href:'/opensource'
-          //     // },
-
-          //     {
-          //       label: "Hackatons",
-          //       href:'/hacks'
-          //     },
-
-          //     {
-          //       label: "Trainings",
-          //       href:'/trainings'
-          //     }
-
-          //   ],
-          // },
 
           {
             type: 'dropdown',
@@ -197,11 +167,6 @@ const config = {
                 href:'/about/trainings'
               },
               
-              // {
-              //   label: "Solutions",
-              //   href:'/about/solutions'
-              // }
-
             ],
           },
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -12,27 +12,17 @@ import Head from '@docusaurus/Head';
 import recentPosts from "../../latest_blog.json";
 // import bootstrap from 'react-bootstrap'
 import chosenposts from "../../latest_blog.json"
+import test from './test.css'
+import Container from 'react-bootstrap/Container';
+import BlogPostPreview from '@theme/BlogPostPreview';
+import ReactDOM from 'react-dom'
+import IframeResizer from 'iframe-resizer-react';
 
 
- 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          {/* <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link> */}
-        </div>
-      </div>
-    </header>
-  );
-}
+
+
+
+
 
 function HomePageBlock({title,img,description,href}){
   return (
@@ -49,22 +39,74 @@ function HomePageBlock({title,img,description,href}){
 }
 
 
+function LatestBlogPosts(){
+  return(
 
-// export default function Home() {
-//   const {siteConfig} = useDocusaurusContext();
-//   return (
-//     <Layout
-//       title={`${siteConfig.title} - the Ekimetrics technology & innovation website `}
-//       description="EkiLab - the Ekimetrics technology & innovation website. Behind the scenes of the Data Science Company"
-//       keywords={["EkiLab","Ekimetrics","Eki.Lab","Data Science","Machine Learning","Artificial Intelligence"]}
-//       >
-//       <HomepageHeader />
-//       <main>
-//         <HomepageFeatures />
-//       </main>
-//     </Layout>
-//   );
-// }
+<div className={clsx("container", styles.gridcard)}>
+  <h1 style={{"fontSize":24}}> <span className="gold">Our Latest blog posts</span></h1>
+
+      <div className={clsx("wrapper", styles.grid)}>
+
+        {recentPosts.items.slice().map((item) => (
+          <div className= {`${styles.gridsubcard} `} >
+            <div className="card__image" >
+              <img
+                // src={headerImageURL}
+                src={item.img_path}
+                alt="Image alt text"
+                title={item.title}
+                style= {{borderTopLeftRadius: "10px",WebkitBorderTopRightRadius: "10px"}}
+              />
+            </div>
+
+          <div className="card__body">
+
+            <article>
+            <h2
+                style={{"fontFamily":"InterCustom","fontSize":16}}
+                className={clsx('margin-bottom--sm', styles.blogPostTitle)}>
+                {<Link to={item.permalink}>{item.title}</Link>}
+              </h2>
+            <p style={{"fontFamily":"InterCustom",fontSize:12,lineHeight:1.2}}>{item.description}</p>
+
+            </article>
+            </div>
+          </div>
+
+                            
+        ))}
+
+      </div>
+</div>
+
+
+
+  )
+}
+
+
+function TechRadar () {
+  return (
+    <div className={clsx("container", styles.card)}>
+      <h1 style={{"fontSize":24}}> <span className="gold">Our Tech Radar </span></h1> 
+      <Link to={"https://ekimetrics.github.io/tech-radar/"}>{"View in fullscreen"}</Link> 
+
+      <div id="wrap">
+
+              
+        <iframe id="inlineFrameExample"
+            title="Inline Frame Example"
+            width="100%"
+            height="500"
+            src="https://ekimetrics.github.io/tech-radar/">
+        </iframe>
+      </div>
+    </div>
+  )
+
+}
+
+
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
@@ -97,92 +139,12 @@ export default function Home() {
         </Row>
         </div>
 
-        <div className={clsx("container", styles.card)}>
-        <h1 style={{"fontSize":24}}> <span className="gold">Our Tech Radar </span></h1> 
-        <Link to={"https://ekimetrics.github.io/tech-radar/"}>{"View in fullscreen"}</Link> 
-                  
-          <iframe id="inlineFrameExample"
-              title="Inline Frame Example"
-              width="100%"
-              height="500"
-              src="https://ekimetrics.github.io/tech-radar/">
-          </iframe>
-        </div>
-
-
-        
-        <div className={clsx("container", styles.card)}>
-        <h1 style={{"fontSize":24}}> <span className="gold">Our Latest blog posts</span></h1>
-
-          <Row>
-          {chosenposts.items.slice().map((item) => (
-                    <Col className={`${styles.acard}`}>
-                    <div className= {`${styles.bcard} `} >
-                      <div className="card__image">
-                        <img
-                          // src={headerImageURL}
-                          src={item.img_path}
-                          alt="Image alt text"
-                          title={item.title}
-                        />
-                      </div>
-
-                    <div className="card__body">
-
-                      <article>
-                      <h2
-                          style={{"fontFamily":"InterCustom","fontSize":16}}
-                          className={clsx('margin-bottom--sm', styles.blogPostTitle)}>
-                          {<Link to={item.permalink}>{item.title}</Link>}
-                        </h2>
-                      <p style={{"fontFamily":"InterCustom",fontSize:12,lineHeight:1.2}}>{item.description}</p>
-
-                      </article>
-                      </div>
-                    </div>
-
-                    </Col>
-                    
-                  ))}
-          </Row>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        {/* <div className={clsx("container", styles.card)}>
-          <Row>
-            <HomePageBlock title="Our latest blog posts" href="" description={
-              <>
-                <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
-                  {recentPosts.items.slice(0, 2).map((item, index) => (
-                    <li key={index}>
-                      <a href={`${item.permalink}`}>{item.title}</a>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            }/>
-          </Row>
-        </div> */}
-
-
-
-        
-        
-        
+        <TechRadar></TechRadar>
+        <LatestBlogPosts></LatestBlogPosts>
 
       </main>
     </Layout>
     
   );
 }
+

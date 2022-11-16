@@ -1,7 +1,7 @@
 ---
 title: Newsletter for September 2022
 header_image_url: "./img/blog/header.png"
-authors: [ali.ghazouani]
+authors: [ali.ghazouani,nathan.rouff]
 tags: [Data Science, Data Engineering, Data Mesh, NPM, Hopular]
 draft: False
 description: "Hi everyone, We are now in September and we release our 6th Newsletter! Ranging from podcasts to tutorials, this Newsletter is made for practicioners!"
@@ -17,6 +17,7 @@ keywords:
     - App and Web Development
     - Data Science for business
 ---
+
 
 <!--truncate-->
 
