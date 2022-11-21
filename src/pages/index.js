@@ -23,7 +23,6 @@ import IframeResizer from 'iframe-resizer-react';
 
 
 
-
 function HomePageBlock({title,img,description,href}){
   return (
   <Col className={styles.mainCardColumn}>
@@ -47,7 +46,7 @@ function LatestBlogPosts(){
 
       <div className={clsx("wrapper", styles.grid)}>
 
-        {recentPosts.items.slice().map((item) => (
+        {recentPosts.items.slice(0,4).map((item) => (
           <div className= {`${styles.gridsubcard} `} >
             <div className="card__image" >
               <img
@@ -111,6 +110,7 @@ function TechRadar () {
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   const recentPosts = require("../../latest_blog.json");
+      
   return (
     <Layout
       title={`${siteConfig.title} - the Ekimetrics technology & innovation website `}
@@ -141,6 +141,15 @@ export default function Home() {
 
         <TechRadar></TechRadar>
         <LatestBlogPosts></LatestBlogPosts>
+
+{/* 
+      <div className={clsx("container", styles.card)}>
+        <h1 style={{"fontSize":24}}> <span className="gold">Our Tech Radar </span></h1> 
+      </div> */}
+
+
+
+
 
       </main>
     </Layout>
