@@ -4,6 +4,7 @@ authors: [nathan.rouff]
 
 header_image_url: "./img/blog/plitvice_lakes.jpg"
 tags: [Operational Research, Optimization, Knapsack problem, Solvers]
+image: "./img/blog/plitvice_lakes.jpg"
 draft: false
 description: "This article is part of a series of articles which will introduce several optimization techniques, from traditional (yet advanced) Mathematical Optimization solvers and associated packages to Deep Reinforcement Learning algorithms, while tackling a very famous Operations Research problem: the multi-knapsack problem. Here, the focus is on traditional optimization techniques."
 keywords:
